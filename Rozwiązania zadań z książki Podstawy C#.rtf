@@ -1,0 +1,1747 @@
+{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}{\f2\fnil Consolas;}{\f3\fnil\fcharset238 Consolas;}{\f4\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;\red0\green128\blue0;\red128\green128\blue128;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang1033\b\f0\fs22 Zadanie 2.1\b0\par
+\pard\sl240\slmult1 namespace Zadania_z_ksiazki\par
+\{\par
+    class Program\par
+    \{\par
+        static void Main(string[] args)\par
+        \{\par
+            double C, F;\par
+            Console.WriteLine("Prosz\lang1045\f1\'ea poda\'e6 ilo\'9c\'e6 stopni Celsjusza");\par
+            C = double.Parse(Console.ReadLine());\par
+            F = 32 + 9 * C / 5;\par
+            Console.WriteLine(C + " stopni C. to " + F + " stopni/e F");\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b Zadanie 2.2\b0\par
+\par
+namespace Zadania_z_ksiazki\par
+\{\par
+    class Program\par
+    \{\par
+        static void Main(string[] args)\par
+        \{\par
+            double a, b, c, delta;\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik a");\par
+            a = double.Parse(Console.ReadLine());\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik b");\par
+            b = double.Parse(Console.ReadLine());\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik c");\par
+            c = double.Parse(Console.ReadLine());\par
+            delta = b*b-4*a*c;\par
+            Console.WriteLine("delta = " + delta);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+    \}\par
+\}\par
+\par
+OPCJONALNIE\par
+\par
+namespace Zadania_z_ksiazki\par
+\{\par
+    class Program\par
+    \{\par
+        static void Main(string[] args)\par
+        \{\par
+            double a, b, c, delta;\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik a");\par
+            a = Convert.ToDouble(Console.ReadLine());\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik b");\par
+            b = Convert.ToDouble(Console.ReadLine());\par
+            Console.WriteLine("Prosz\'ea poda\'e6 wsp\'f3\'b3czynnik c");\par
+            c = Convert.ToDouble(Console.ReadLine());\par
+            delta = b*b-4*a*c;\par
+            Console.WriteLine("delta = " + delta);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b Zadanie 2.3\par
+\par
+\cf1\b0\f2\fs19 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2  masa, wzrost, bmi;\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wag\f3\'ea\f2  cia\f3\'b3\f2 a w kilogramach"\cf2 );\par
+            masa = Convert.ToDouble(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wzrost w metrach"\cf2 );\par
+            wzrost = Convert.ToDouble(Console.ReadLine());\par
+            bmi = Convert.ToInt16(masa / (wzrost * wzrost));\par
+            Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+    \}\par
+\}\cf0\f1\fs22\par
+\par
+\par
+\b Zadanie 2,10\b0\par
+\par
+\cf1\f2\fs19 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2  powierzchnia = 100, osoby = 10;\par
+            \cf1 double\cf2  gestoscZaludnienia = (\cf1 double\cf2 )osoby / powierzchnia;\par
+            Console.WriteLine(\cf4 "\{0,1:F2\}"\cf2 , gestoscZaludnienia);\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 3.1\cf2\b0\par
+\par
+\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  rok"\cf2 );\par
+            \cf1 int\cf2  rok = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            \par
+            \cf1 if\cf2  (rok % 4 == 0)\par
+            Console.Write(\cf4 "Jest to rok przest\f3\'ea\f2 pny"\cf2 );\par
+            \cf1 else\cf2\par
+            Console.Write(\cf4 "Nie jest to rok przest\f3\'ea\f2 pny"\cf2 );\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3.2\b0\par
+\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  1"\cf2 );\par
+            \cf1 int\cf2  liczba1 = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  2"\cf2 );\par
+            \cf1 int\cf2  liczba2 = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            \cf1 if\cf2  (liczba1 % liczba2 == 0)\par
+            Console.Write(\cf4 "Liczba2 jest dzielnikiem Liczby1"\cf2 );\par
+            \cf1 else\cf2\par
+            Console.Write(\cf4 "Liczba2 nie jest dzielnikiem Liczby1"\cf2 );\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3.3\par
+\b0\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  a"\cf2 );\par
+            \cf1 int\cf2  a = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  b"\cf2 );\par
+            \cf1 int\cf2  b = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  c"\cf2 );\par
+            \cf1 int\cf2  c = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+\par
+            \cf1 if\cf2  (a > b && a > c)\par
+            Console.Write(\cf4 "Liczba a najwieksza"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (b > a && b > c)\par
+            Console.Write(\cf4 "Liczba b najwieksza"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (c > a && c > b)\par
+            Console.Write(\cf4 "Liczba c najwieksza"\cf2 );            \par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3.4\par
+\b0\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2  wynik = 0;\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  a"\cf2 );\par
+            \cf1 double\cf2  a = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  znak dzia\f3\'b3\f2 ania"\cf2 );            \par
+            \cf1 string\cf2  znak = Console.ReadLine();\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  c"\cf2 );\par
+            \cf1 double\cf2  c = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            \{\par
+                \cf1 if\cf2  (znak == \cf4 "+"\cf2 )\par
+                    wynik = a + c;\par
+                \cf1 else\cf2  \cf1 if\cf2  (znak == \cf4 "-"\cf2 )\par
+                    wynik = a - c;\par
+                \cf1 else\cf2  \cf1 if\cf2  (znak == \cf4 "*"\cf2 )\par
+                    wynik = a * c;\par
+                \cf1 else\cf2  \cf1 if\cf2  (znak == \cf4 "/"\cf2 )\par
+                    wynik = a / c;\par
+                \cf1 else\cf2\par
+                    Console.WriteLine(\cf4 "podano niewla\f3\'9c\f2 ciwy znak dzia\f3\'b3\f2 ania"\cf2 );\par
+            \}\par
+            Console.WriteLine(wynik);           \par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\cf0\b\f1\fs22 Zadanie 3.5\b0\par
+\par
+\cf1\f2\fs19 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2  a, b, c, delta, x1, x2, x0;\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 czynnik a"\cf2 );\par
+            a = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 czynnik b"\cf2 );\par
+            b = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 czynnik c"\cf2 );\par
+            c = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            delta = b * b - 4 * a * c;\par
+            \cf1 if\cf2  (delta > 0) \cf5 //je\f3\'9c\f2 li delta jest wi\f3\'ea\f2 ksza od 0 to mamy dwa miejsca zerowe\cf2\par
+            \{\par
+                x1 = (-b - Math.Sqrt(delta)) / (2 * a); \cf5 //wyznaczamy 1 miejsce zerowe\cf2\par
+                x2 = (-b + Math.Sqrt(delta)) / (2 * a); \cf5 //wyznaczamy 2 miejsce zerowe\cf2\par
+                Console.WriteLine(\cf4 "Delta jest wiesza od zera dlatego funkcja ma dwa miejsca zerowe: x1 = "\cf2  + x1 + \cf4 " a x2 = "\cf2  + x2);\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (delta == 0)\par
+            \{\par
+                x0 = -b / (2 * a); \cf5 //wyznaczamy jedno miejsce zerowe\cf2\par
+                Console.WriteLine(\cf4 "Delta jest r\lang1033\f4\'f3\lang1045\f2 wna zero dlatego funkcja ma jedno miejsce zerowe: x0 = "\cf2  + x0);\par
+            \}\par
+            \cf1 else\cf2\par
+                Console.WriteLine(\cf4 "Delta jest mniejsza od zera dlatego funkcja nie ma miejsc zerowych"\cf2 );\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3,6\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2  masa, wzrost, bmi;\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wag\f3\'ea\f2  cia\f3\'b3\f2 a w kilogramach"\cf2 );\par
+            masa = Convert.ToDouble(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  wzrost w metrach"\cf2 );\par
+            wzrost = Convert.ToDouble(Console.ReadLine());\par
+            bmi = Convert.ToInt16(masa / (wzrost * wzrost));\par
+            \cf1 if\cf2  (bmi < 16)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " Wyg\f3\'b3\f2 odzenie"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 16 && bmi < 17)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " Wychudzenie"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 17 && bmi < 19)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " Niedowaga"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 19 && bmi < 25)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " Prawid\f3\'b3\f2 owa waga"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 25 && bmi < 30)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " Nadwaga"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 30 && bmi < 35)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " I stopie\f3\'f1\f2  oty\f3\'b3\f2 o\f3\'9c\f2 ci"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 35 && bmi < 40)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " II stopie\f3\'f1\f2  oty\f3\'b3\f2 o\f3\'9c\f2 ci"\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (bmi >= 40)\par
+                Console.WriteLine(\cf4 "Wska\f3\'9f\f2 nik BMI = "\cf2  + bmi + \cf4 " III stopie\f3\'f1\f2  oty\f3\'b3\f2 o\f3\'9c\f2 ci"\cf2 );\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\b\par
+\par
+\f3 Zadanie 3,7\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wpisz numer dnia tygodnia"\cf2 );\par
+            \cf1 int\cf2  numer = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            \cf1 switch\cf2  (numer)\par
+            \{\par
+                \cf1 case\cf2  1:\par
+                    Console.WriteLine(\cf4 "Poniedzia\f3\'b3\f2 ek"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  2:\par
+                    Console.WriteLine(\cf4 "Wtorek"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  3:\par
+                    Console.WriteLine(\cf4 "\f3\'8c\f2 roda"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  4:\par
+                    Console.WriteLine(\cf4 "Czwartek"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  5:\par
+                    Console.WriteLine(\cf4 "Pi\f3\'b9\f2 tek"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  6:\par
+                    Console.WriteLine(\cf4 "Sobota"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 case\cf2  7:\par
+                    Console.WriteLine(\cf4 "Niedziela"\cf2 );\par
+                    \cf1 break\cf2 ;\par
+                \cf1 default\cf2 :\par
+                    Console.WriteLine(\cf4 "Nieznana warto\f3\'9c\'e6\f2 "\cf2 );\par
+                    \cf1 break\cf2 ;\par
+            \}\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\b\par
+\par
+\f3 Zadanie 3.8\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Podaj \f3\'9c\f2 redni\f3\'b9\f2  ocen"\cf2 );\par
+            \cf1 double\cf2  a = \cf1 double\cf2 .Parse(Console.ReadLine());\par
+            \cf1 if\cf2  (a >= 2 && a < 4)\par
+                Console.WriteLine(\cf4 "Kwota stypendium = 0,00 z\f3\'b3\f2 "\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (a >= 4 && a < 4.8)\par
+                Console.WriteLine(\cf4 "Kwota stypendium = 350,00 z\f3\'b3\f2 "\cf2 );\par
+            \cf1 else\cf2  \cf1 if\cf2  (a >= 4.8 && a < 5)\par
+                Console.WriteLine(\cf4 "Kwota stypendium = 550,00z\f3\'b3\f2 ."\cf2 );\par
+            \cf1 else\cf2\par
+                Console.WriteLine(\cf4 "\f3\'8c\f2 rednia poza w\f3\'b3\f2 a\f3\'9c\f2 ciwym zakresem ocen"\cf2 );\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3,9 a\b0\par
+\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  wierszy"\cf2 );\par
+            \cf1 int\cf2  n = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            \par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 1; i <= n; i++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  j = 1; j <= n; j++)\par
+                \{\par
+                    \cf1 if\cf2  (i >= j)\par
+                    Console.Write(\cf4 "*"\cf2 );\par
+                    \cf1 else\cf2\par
+                    Console.Write(\cf4 " "\cf2 );\par
+                \}\par
+\par
+                Console.WriteLine();\par
+            \}\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3,10\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  n dla silni"\cf2 );\par
+            \cf1 int\cf2  n = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+\par
+            \cf1 int\cf2  result = 1;\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 1; i <= n; i++)\par
+            \{\par
+                result *= i;\par
+            \}\par
+            Console.WriteLine(result);\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3,11\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2  i = 0, suma = 0;\par
+            Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  \f3 liczb\'ea ca\'b3kowit\'b9\f2 "\cf2 );\par
+            \cf1 int\cf2  n = \cf1 int\cf2 .Parse(Console.ReadLine());            \par
+            \cf1 do\cf2\par
+            \{\par
+                suma = suma + ++i;\par
+                Console.WriteLine(i);\par
+            \} \cf1 while\cf2  (n > suma);\par
+            Console.WriteLine(suma);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 3,12\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2  n = 0, suma = 0;\par
+                       \par
+            \cf1 do\cf2\par
+            \{\par
+                Console.WriteLine(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  ca\f3\'b3\f2 kowit\f3\'b9\f2 "\cf2 );\par
+                n = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+                suma = suma + n;\par
+                Console.WriteLine(suma);\par
+\par
+            \} \cf1 while\cf2  (n != 0);\par
+            Console.WriteLine(suma);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 4,1\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Ile chcesz wpisa\f3\'e6\f2  liczb w tablicy?"\cf2 );\par
+            \cf1 int\cf2  rozmiar = Convert.ToInt32(Console.ReadLine());\par
+            \cf1 int\cf2 [] liczby = \cf1 new\cf2  \cf1 int\cf2 [rozmiar];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                Console.WriteLine(\cf4 "Podaj \{0\} liczb\f3\'ea\f2 "\cf2 , i + 1);\par
+                liczby[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                Console.Write(liczby[i] + \cf4 ", "\cf2 );\par
+            \}\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 4,2\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2 [] a = \{ -11, 22, 33, -44, 55, 66, -77, 88, 99 \};\par
+            \cf1 int\cf2 [] ujemne = \cf1 new\cf2  \cf1 int\cf2 [a.Length]; \cf5 //tablica po\f3\'9c\f2 rednia zbieraj\f3\'b9\f2 ca liczby ujemne z a do cel\lang1033\f4\'f3\lang1045\f2 w przekopiowania p\lang1033\f4\'f3\lang1045\f3\'9f\f2 niej do c\cf2\par
+            \cf1 int\cf2 [] c = \cf1 new\cf2  \cf1 int\cf2 [10];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < a.Length; i++)\par
+            \{\par
+                \cf1 if\cf2  (a[i] < 0)\par
+                \{\par
+                    ujemne[i] = a[i];\par
+                    Console.WriteLine(\cf4 "Liczba ujemna z tablicy a: \{0\}"\cf2 , a[i]);\par
+                \}\par
+            \}\par
+            Console.WriteLine();\par
+            ujemne.CopyTo(c, 0);\par
+\par
+            Console.WriteLine(\cf4 "Nowa tablica c z przekopiowanymi tylko ujemnymi liczbami:"\cf2 );\par
+\par
+            \cf1 foreach\cf2  (\cf1 int\cf2  x \cf1 in\cf2  c)\par
+            \{\par
+                Console.Write(\cf4 "\{0\}, "\cf2 , x);\par
+            \}\par
+            Console.ReadKey();\par
+        \}\par
+        \par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 4,3\b0\par
+\par
+\par
+\cf1\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Ile chcesz wpisa\f3\'e6\f2  liczb w tablicy?"\cf2 );\par
+            \cf1 int\cf2  rozmiar = Convert.ToInt32(Console.ReadLine());\par
+            \cf1 int\cf2 [] liczby = \cf1 new\cf2  \cf1 int\cf2 [rozmiar];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                Console.WriteLine(\cf4 "Podaj \{0\} liczb\f3\'ea\f2 "\cf2 , i + 1);\par
+                liczby[i] = Convert.ToInt32(Console.ReadLine());\par
+            \}\par
+            Console.WriteLine();\par
+            Console.WriteLine(\cf4 "Tablica wygl\f3\'b9\f2 da nast\f3\'ea\f2 puj\f3\'b9\f2 co: "\cf2 );\par
+            Console.WriteLine();\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                Console.Write(liczby[i] + \cf4 ", "\cf2 );\par
+            \}\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            \cf1\f3 a\cf2\f2\par
+            Console.WriteLine();\par
+\par
+            \cf1 int\cf2  min = liczby[0]; \cf5 // tymczasowe minimum\cf2\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 1; i < liczby.Length; i++)\par
+            \{\par
+                \cf1 if\cf2  (liczby[i] <\par
+                    min)\par
+                \{\par
+                    min = liczby[i];\par
+                \}\par
+            \}\par
+            Console.WriteLine(\cf4 "Najmniejsza liczba tablicy to: \{0\}"\cf2 , min);\par
+            Console.WriteLine();\par
+\par
+            \cf1 int\cf2  suma = 0;\par
+            \cf1 double\cf2  srednia;\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                suma += liczby[i];\par
+            \}\par
+            srednia = (\cf1 double\cf2 )suma / liczby.Length;\par
+            Console.WriteLine(\cf4 "\f3\'8c\f2 rednia dla liczb tablicy to: \{0\}"\cf2 , srednia);\par
+            Console.WriteLine();\par
+            \cf1 int\cf2 [] dodatnie = \cf1 new\cf2  \cf1 int\cf2 [liczby.Length]; \cf5 //tablica po\f3\'9c\f2 rednia zbieraj\f3\'b9\f2 ca liczby dodatnie z a do cel\lang1033\f4\'f3\lang1045\f2 w przekopiowania p\lang1033\f4\'f3\lang1045\f3\'9f\f2 niej do c\cf2\par
+           \par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczby.Length; i++)\par
+            \{\par
+                \cf1 if\cf2  (liczby[i] > 0)\par
+                \{\par
+                    dodatnie[i] = liczby[i];\par
+                \}\par
+            \}\par
+            Console.WriteLine(\cf4 "Liczba dodatnich element\lang1033\f4\'f3\lang1045\f2 wtablicy to: "\cf2  + dodatnie.Length);\par
+\par
+\par
+            Console.ReadKey();\par
+\par
+        \}\par
+\par
+    \}\par
+\}\par
+\b\par
+\par
+\f3 Zadanie 4,4\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Random rand = \cf1 new\cf2  Random();\par
+            \cf1 int\cf2 [] tablica = \cf1 new\cf2  \cf1 int\cf2 [100];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tablica.Length; i++)\par
+            \{\par
+                tablica[i] = rand.Next(1, 1000);\par
+            \}\par
+            \cf1 int\cf2  liczbadzielnikow = 0; \cf5 // tymczasowa\cf2\par
+            \cf1 int\cf2  a = 1; \cf5 // tymczasowa dla okre\f3\'9c\f2 lenia pocz\f3\'b9\f2 tku zakresu liczb\cf2\par
+            \cf1 int\cf2  iloscliczbpierwszych = 0;\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tablica.Length; i++)\par
+            \{\par
+                \cf1 while\cf2  (a <= tablica[i])\par
+                \{\par
+                    \cf1 if\cf2  (tablica[i] % a == 0)\par
+                    \{\par
+                    liczbadzielnikow = liczbadzielnikow + 1;\par
+                    \}\par
+                    a++;\par
+                \}\par
+                \cf1 if\cf2  (liczbadzielnikow == 2)\par
+                \{\par
+                    Console.WriteLine(\cf4 "Liczba "\cf2  + tablica[i] + \cf4 " jest liczb\f3\'b9\f2  pierwsz\f3\'b9\f2 "\cf2 );\par
+                    iloscliczbpierwszych = iloscliczbpierwszych + 1;\par
+                \}\par
+                liczbadzielnikow = 0;\par
+                a = 1;\par
+            \}\par
+            \par
+\par
+            Console.WriteLine();\par
+            Console.WriteLine(\cf4 "Liczb pierwszych w tablicy jest: "\cf2  + iloscliczbpierwszych);\par
+            Console.ReadKey();\par
+\par
+        \}\par
+\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 4,5\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2 [] tab1 = \cf1 new\cf2  \cf1 int\cf2 [] \{ 1, 2, 3, 4, 5, 6 \};\par
+\par
+            \cf1 int\cf2 [] tab2 = \cf1 new\cf2  \cf1 int\cf2 [tab1.Length];\par
+\par
+            Array.Copy(tab1, 0, tab2, 1, 5);\par
+\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab2.Length; i++)\par
+                Console.Write(\cf4 "\{0\}, "\cf2 , tab1[i]);\par
+            \par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab2.Length; i++)\par
+\par
+                Console.Write(\cf4 "\{0\}, "\cf2 , tab2[i]); ;\par
+                       \par
+            Console.ReadKey();\par
+\par
+        \}\par
+\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 4,6\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2 [,] tablica2d = \{ \{ 2, 2, 3, 4, 5 \}, \{ 3, 4, 5, 6, 7 \}, \{ 5, 6, 7, 8, 8 \}, \{ 7, 8, 9, 1, 2 \}, \{ 8, 9, 1, 2, 3 \} \};\par
+            \par
+            \cf1 for\cf2  (\cf1 int\cf2  a = 0; a < 5; a++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  b = 0; b < 5; b++)\par
+                \{\par
+                    Console.Write(\cf4 "\{0,3\}"\cf2 , tablica2d[a, b]);\par
+                \}\par
+                Console.WriteLine();\par
+                Console.WriteLine();\par
+            \}\par
+            Console.WriteLine(\cf4 "Rozmiar: "\cf2  + tablica2d.Length);\par
+            Console.WriteLine();\par
+\par
+            \par
+            \cf1 int\cf2  suma = tablica2d[0, 0] + tablica2d[1, 1] + tablica2d[2, 2] + tablica2d[3, 3] + tablica2d[4, 4];\par
+                \par
+            Console.Write(\cf4 "Suma element\lang1033\f4\'f3\lang1045\f2 w z przek\f3\'b9\f2 tnej tablicy to: \{0\}"\cf2 , suma);\par
+       \par
+            Console.ReadKey();\par
+\par
+        \}\par
+\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 4,7\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 int\cf2 [,] tabA = \{ \{ 2, 2, 3 \}, \{ 3, 4, 5 \} \};\par
+            \cf1 int\cf2 [,] tabB = \{ \{ 5, 6, 7 \}, \{ 7, 8, 9 \} \};\par
+            \cf1 int\cf2 [,] tabC = \cf1 new\cf2  \cf1 int\cf2 [2, 3];\par
+            Console.WriteLine(\cf4 "Macie\f3\'bf\f2  A:"\cf2 );\par
+            Console.WriteLine();\par
+            \cf1 for\cf2  (\cf1 int\cf2  a = 0; a < tabA.GetLength(0); a++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  b = 0; b < tabA.GetLength(1); b++)\par
+                \{\par
+                    Console.Write(\cf4 "\{0,3\}"\cf2 , tabA[a, b]);\par
+                \}\par
+                Console.WriteLine();\par
+                Console.WriteLine();\par
+            \}\par
+            \par
+            Console.WriteLine(\cf4 "Rozmiar: "\cf2  + tabA.Length);\par
+            Console.WriteLine();\par
+\par
+            Console.WriteLine(\cf4 "Macie\f3\'bf\f2  B:"\cf2 );\par
+            Console.WriteLine();\par
+            \cf1 for\cf2  (\cf1 int\cf2  a = 0; a < tabB.GetLength(0); a++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  b = 0; b < tabB.GetLength(1); b++)\par
+                \{\par
+                    Console.Write(\cf4 "\{0,3\}"\cf2 , tabB[a, b]);\par
+                \}\par
+                Console.WriteLine();\par
+                Console.WriteLine();\par
+            \}\par
+            \par
+            Console.WriteLine(\cf4 "Rozmiar: "\cf2  + tabB.Length);\par
+            Console.WriteLine();\par
+\par
+            tabC[0, 0] = tabA[0, 0] + tabB[0, 0];\par
+            tabC[0, 1] = tabA[0, 1] + tabB[0, 1];\par
+            tabC[0, 2] = tabA[0, 2] + tabB[0, 2];\par
+\par
+            tabC[1, 0] = tabA[1, 0] + tabB[1, 0];\par
+            tabC[1, 1] = tabA[1, 1] + tabB[1, 1];\par
+            tabC[1, 2] = tabA[1, 2] + tabB[1, 2];\par
+\par
+            Console.WriteLine(\cf4 "Macie\f3\'bf\f2  wynikowa dodawania macie\f3\'bf\f2 y A i B to C:"\cf2 );\par
+            Console.WriteLine();\par
+            \cf1 for\cf2  (\cf1 int\cf2  a = 0; a < tabC.GetLength(0); a++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  b = 0; b < tabC.GetLength(1); b++)\par
+                \{\par
+                    Console.Write(\cf4 "\{0,3\}"\cf2 , tabC[a, b]);\par
+                \}\par
+                Console.WriteLine();\par
+                Console.WriteLine();\par
+            \}\par
+\par
+            Console.WriteLine(\cf4 "Rozmiar: "\cf2  + tabC.Length);\par
+            Console.WriteLine();\par
+\par
+\par
+            Console.ReadKey();\par
+\par
+        \}\par
+\par
+    \}\par
+\}\par
+\par
+\par
+\b\f3 Zadanie 4,8\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 string\cf2 [,] dniTygodnia;\par
+            dniTygodnia = \cf1 new\cf2  \cf1 string\cf2 [7, 3]; \cf5 // pami\f3\'ea\f2 taj o zmianie rozmiaru tablicy\cf2\par
+            dniTygodnia[0, 0] = \cf4 "poniedzialek"\cf2 ;\par
+            dniTygodnia[1, 0] = \cf4 "wtorek"\cf2 ;\par
+            dniTygodnia[2, 0] = \cf4 "sroda"\cf2 ;\par
+            dniTygodnia[3, 0] = \cf4 "czwartek"\cf2 ;\par
+            dniTygodnia[4, 0] = \cf4 "pi\f3\'b9\f2 tek"\cf2 ;\par
+            dniTygodnia[5, 0] = \cf4 "sobota"\cf2 ;\par
+            dniTygodnia[6, 0] = \cf4 "niedziela"\cf2 ;\par
+            dniTygodnia[0, 1] = \cf4 "monday"\cf2 ;\par
+            dniTygodnia[1, 1] = \cf4 "tuesday"\cf2 ;\par
+            dniTygodnia[2, 1] = \cf4 "wednesday"\cf2 ;\par
+            dniTygodnia[3, 1] = \cf4 "thursday"\cf2 ;\par
+            dniTygodnia[4, 1] = \cf4 "friday"\cf2 ;\par
+            dniTygodnia[5, 1] = \cf4 "saturday"\cf2 ;\par
+            dniTygodnia[6, 1] = \cf4 "sunday"\cf2 ;\par
+            dniTygodnia[0, 2] = \cf4 "montag"\cf2 ;\par
+            dniTygodnia[1, 2] = \cf4 "dienstag"\cf2 ;\par
+            dniTygodnia[2, 2] = \cf4 "mittwoch"\cf2 ;\par
+            dniTygodnia[3, 2] = \cf4 "donnerstag"\cf2 ;\par
+            dniTygodnia[4, 2] = \cf4 "freitag"\cf2 ;\par
+            dniTygodnia[5, 2] = \cf4 "samstag"\cf2 ;\par
+            dniTygodnia[6, 2] = \cf4 "sonntag"\cf2 ;\par
+\par
+            \cf1 for\cf2  (\cf1 int\cf2  a = 0; a < dniTygodnia.GetLength(0); a++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  b = 0; b < dniTygodnia.GetLength(1); b++)\par
+                \{\par
+                    Console.Write(\cf4 "\{0 , -15\}"\cf2 , dniTygodnia[a, b]);\par
+                \}\par
+                Console.WriteLine();\par
+                Console.WriteLine();\par
+\par
+            \}\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\cf0\b\f3 Zadanie 4,9\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 string\cf2  tekst = \cf4 "Ala ma kota i kanarka"\cf2 ;\par
+            Console.WriteLine(\cf4 "W tek\f3\'9c\f2 cie: \{0\} "\cf2 , tekst);\par
+            Console.WriteLine();\par
+            \cf1 int\cf2  liczbaZnakow = 0;\par
+            \cf1 foreach\cf2  (\cf1 char\cf2  litera \cf1 in\cf2  tekst)\par
+                \cf1 if\cf2  (litera == \cf4 ' '\cf2 ) liczbaZnakow++;\par
+\par
+            Console.WriteLine(\cf4 "jest \{0\} Wyraz\lang1033\f4\'f3\lang1045\f2 w/y"\cf2 , liczbaZnakow + 1);\par
+            Console.ReadKey();\par
+            \par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf0\b\f3 Zadanie 5,1\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  StpC(\cf1 double\cf2  F)\par
+        \{\par
+                    \par
+            Console.WriteLine((Double)5 / 9 * (F - 32));\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+\par
+            StpC(100); \cf5 // wywo\f3\'b3\f2 anie metody\cf2\par
+            \par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\cf0\b\f3 Zadanie 5,2\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 bool\cf2  Zakres(\cf1 double\cf2  a, \cf1 double\cf2  b, \cf1 double\cf2  x)\par
+        \{\par
+            \cf1 if\cf2  (x >= a && x <= b)\par
+            \{\par
+                \par
+                \cf1 return\cf2  (\cf1 true\cf2 );\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                \cf1 return\cf2  (\cf1 false\cf2 );\par
+            \}\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 if\cf2  (Zakres(1, 20, 25) == \cf1 true\cf2 )\par
+            Console.WriteLine(\cf4 "Liczba x jest liczb\f3\'b9\f2  z przedzia\f3\'b3\f2 u a-b"\cf2 );\par
+            \cf1 else\cf2\par
+            Console.WriteLine(\cf4 "Liczba x jest liczb\f3\'b9\f2  z poza przedzia\f3\'b3\f2 u a-b"\cf2 );\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 5,3\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Przesun(\cf1 ref\cf2  \cf1 double\cf2  a, \cf1 ref\cf2  \cf1 double\cf2  b, \cf1 double\cf2  x, \cf1 double\cf2  y)\par
+        \{\par
+            a += x;\par
+            b += y;\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2 [] wek = \{ 3, 2 \};\par
+            \cf1 double\cf2 [] punkt = \cf1 new\cf2  \cf1 double\cf2 [2];\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  pierwsz\f3\'b9\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dn\f3\'b9\f2  punktu"\cf2 );\par
+            punkt[0] = Convert.ToDouble(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  pierwsz\f3\'b9\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dn\f3\'b9\f2  punktu"\cf2 );\par
+            punkt[1] = Convert.ToDouble(Console.ReadLine());\par
+            Console.Write(\cf4 "Podane wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dne punktu to: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < punkt.Length; i++)\par
+                Console.Write(punkt[i] + \cf4 " "\cf2 );\par
+            \par
+            Przesun(\cf1 ref\cf2  punkt[0], \cf1 ref\cf2  punkt[1], wek[0], wek[1]); \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            Console.Write(\cf4 "Wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dne punktu po przesuni\f3\'ea\f2 ciu o wektor [3, 2] to: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < punkt.Length; i++)\par
+                Console.Write(punkt[i] + \cf4 " "\cf2 );\par
+            Console.WriteLine();\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 5,4\par
+\par
+wariant a)\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 double\cf2 [] Mnozenie(\cf1 double\cf2 [] tab, \cf1 double\cf2  y)\par
+        \{\par
+            \par
+            \cf1 double\cf2 [] tab1 = \cf1 new\cf2  \cf1 double\cf2 [tab.Length];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+            \{\par
+                tab1[i] = tab[i] * y;\par
+            \}\par
+            \cf1 return\cf2  (tab1);\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2 [] tab = \{ 1, 4, 6, 8, 2 \};\par
+            Console.Write(\cf4 "tab to: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+                Console.Write(tab[i] + \cf4 " "\cf2 );\par
+\par
+            \cf1 double\cf2 [] tab2 = Mnozenie(tab, 2); \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            Console.Write(\cf4 "Przemno\f3\'bf\f2 ona tablica: "\cf2 , Mnozenie(tab, 2));\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab2.Length; i++)\par
+            Console.Write(tab2[i] + \cf4 " "\cf2 );\par
+            Console.WriteLine();\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 wariant b)\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  Mnozenie(\cf1 double\cf2 [] tab, \cf1 double\cf2  y)\par
+        \{\par
+            \par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+            \{\par
+                tab[i] = tab[i] * y;\par
+            \}\par
+            \par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf1 double\cf2 [] tab = \{ 1, 4, 6, 8, 2 \};\par
+            Console.Write(\cf4 "tablica to: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+                Console.Write(tab[i] + \cf4 " "\cf2 );\par
+\par
+            Mnozenie(tab, 2); \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            Console.Write(\cf4 "Przemno\f3\'bf\f2 ona tablica: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+            Console.Write(tab[i] + \cf4 " "\cf2 );\par
+            Console.WriteLine();\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\par
+\cf0\b\f3 Zadanie 5,5\cf1\b0\f2\par
+\par
+\par
+\par
+namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  Rysuj(\cf1 int\cf2  a, \cf1 int\cf2  b, \cf1 string\cf2  znak)\par
+        \{\par
+\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 1; i <= a; i++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  j = 1; j <= b; j++)\par
+                \{\par
+                    Console.Write(znak);\par
+                \}\par
+                Console.WriteLine();\par
+            \}\par
+\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.Write(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  wierszy: "\cf2 );\par
+            \cf1 int\cf2  a = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine();\par
+            Console.Write(\cf4 "Wprowad\f3\'9f\f2  liczb\f3\'ea\f2  kolumn: "\cf2 );\par
+            \cf1 int\cf2  b = \cf1 int\cf2 .Parse(Console.ReadLine());\par
+            Console.WriteLine();\par
+            Console.Write(\cf4 "Podaj znak rysowania: "\cf2 );\par
+            \cf1 string\cf2  znak = Console.ReadLine();\par
+            Console.WriteLine();\par
+            Rysuj(a, b, znak);  \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            Rysuj(b, a, znak);  \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+            Console.WriteLine();\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\cf0\b\f3 Zadanie 5,6\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  Mnozenie(\cf1 double\cf2 [] tab, \cf1 int\cf2  y)\par
+        \{\par
+\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+            \{\par
+                tab[i] = tab[i] * y;\par
+            \}\par
+\par
+        \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  Mnozenie(\cf1 string\cf2 [] tab, \cf1 int\cf2  y)\par
+        \{\par
+\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+            \{\par
+                \cf1 for\cf2  (\cf1 int\cf2  j = 0; j<y; j++)\par
+                Console.Write(tab[i]);\par
+                Console.Write(\cf4 " "\cf2 );\par
+            \}\par
+          \par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            \cf5 // double[] tab = \{ 1, 4, 6, 8, 2 \};    // zakomentowane dla cel\lang1033\f4\'f3\lang1045\f2 w wariantu c)\cf2\par
+            \cf5 // Console.Write("tablica to: ");       // w tym wariancie tabela jest typu string\cf2\par
+            \cf5 // for (int i = 0; i < tab.Length; i++)\cf2\par
+            \cf5 //     Console.Write(tab[i] + " ");\cf2\par
+\par
+            \cf1 string\cf2 [] tab = \{\cf4 "ala"\cf2 , \cf4 "kot"\cf2 , \cf4 "dom"\cf2  \};\par
+            Console.Write(\cf4 "tablica to: "\cf2 );\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < tab.Length; i++)\par
+                Console.Write(tab[i] + \cf4 " "\cf2 );\par
+            Console.WriteLine();\par
+            Console.WriteLine();\par
+            Console.WriteLine(\cf4 "Przemno\f3\'bf\f2 ona tablica: "\cf2 );\par
+            \par
+            Console.WriteLine();\par
+            Mnozenie (tab, 2); \cf5 //wywo\f3\'b3\f2 anie metody\cf2\par
+            \par
+            Console.WriteLine();\par
+            \cf5 //Console.Write("Przemno\f3\'bf\f2 ona tablica: ");   // zakomentowane dla cel\lang1033\f4\'f3\lang1045\f2 w wariantu c)\cf2\par
+            \cf5 // for (int i = 0; i < tab.Length; i++)     // w tym wariancie tabela jest typu string\cf2\par
+            \cf5 //     Console.Write(tab[i] + " ");\cf2\par
+            Console.WriteLine();\par
+\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\par
+\cf0\b\f3 Zadanie 5,7\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  Ciag(\cf1 int\cf2  x, \cf1 int\cf2  n)\par
+        \{\par
+\par
+            \cf1 int\cf2  i = 1;\par
+            \cf1 int\cf2  suma = 0;\par
+            \cf1 do\cf2\par
+            \{\par
+                suma += x + i;\par
+                ++i;\par
+            \} \cf1 while\cf2  (i <= n);\par
+            Console.WriteLine(suma);\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  warto\f3\'9c\'e6\f2  x jako liczb\f3\'ea\f2  naturaln\f3\'b9\f2  "\cf2 );\par
+            \cf1 int\cf2  a = Convert.ToInt32(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  warto\f3\'9c\'e6\f2  n jako liczb\f3\'ea\f2  naturaln\f3\'b9\f2  "\cf2 );\par
+            \cf1 int\cf2  b = Convert.ToInt32(Console.ReadLine());\par
+            Console.Write(\cf4 "Suma ci\f3\'b9\f2 gu (x+1)+(x+2)+....+(x+n) to: "\cf2 );\par
+            Console.WriteLine();\par
+            Ciag(a, b);\par
+            Console.WriteLine();\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\par
+\cf0\b\f3 Zadanie 5,8\f2\par
+\cf1\b0\par
+\par
+namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  SumaCyfrLiczby(\cf1 int\cf2 [] a)\par
+        \{\par
+            \cf1 int\cf2  suma = 0;\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < a.Length; i++)\par
+                suma += a[i];\par
+            Console.WriteLine(suma);\par
+        \}\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  liczb\f3\'ea\f2  ca\f3\'b3\f2 kowit\f3\'b9\f2 "\cf2 );\par
+            \cf1 string\cf2  liczba = (Console.ReadLine());\par
+\par
+            \cf1 int\cf2 [] tab = \cf1 new\cf2  \cf1 int\cf2 [liczba.Length];\par
+            \cf1 for\cf2  (\cf1 int\cf2  i = 0; i < liczba.Length; i++)\par
+                tab[i] = (liczba[i]-48);\par
+\par
+            \par
+            Console.WriteLine();\par
+            Console.WriteLine(\cf4 "Suma cyfr z podanej liczby to: "\cf2 );\par
+            SumaCyfrLiczby(tab);\par
+            Console.WriteLine();\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1\par
+\par
+\par
+\cf0\b\f3 Zadanie 5,9\cf1\b0\par
+\par
+\f2\par
+\par
+namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Fib\cf2\par
+    \{\par
+\par
+        \par
+        \cf6 //\cf5  Oblicza n-ty wyraz ciagu Fibonacciego\cf2\par
+        \par
+        \cf6 //\cf5\f3  \cf6\f2 "\cf2 n\cf6 ">\cf5 n (pierwszy wyraz ma index 1)\cf2\par
+        \cf6 //\cf5  \cf6 <returns>\cf5 n-ty wyraz ciagu Fibonacciego\cf6 </returns>\cf2\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 int\cf2  fib(\cf1 int\cf2  n)\par
+        \{\par
+            \cf1 if\cf2  ((n == 1) || (n == 2))\par
+                \cf1 return\cf2  1;\par
+            \cf1 else\cf2\par
+                \cf1 return\cf2  fib(n - 1) + fib(n - 2);\par
+        \}\par
+\par
+        \par
+        [STAThread]\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            String line;\par
+            \cf1 int\cf2  n;\par
+\par
+            Console.WriteLine(\cf4 "Podaj, ktory wyraz ciagu Fibonacciego obliczyc"\cf2 );\par
+            line = Console.ReadLine();\par
+            n = \cf1 int\cf2 .Parse(line);\par
+\par
+            Console.WriteLine(n + \cf4 "-ty wyraz ciagu Fibonacciego: "\cf2  + fib(n));\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 6,1\par
+\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Prostokat\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  Dlugosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  Szerokosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  Prostokat(\cf1 int\cf2  bok1, \cf1 int\cf2  bok2)\par
+        \{\par
+            Dlugosc = bok1;\par
+            Szerokosc = bok2;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Powierzchnia()\par
+        \{\par
+            \cf1 double\cf2  powierzchnia = Dlugosc * Szerokosc;\par
+            \cf1 return\cf2  powierzchnia;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Obwod()\par
+        \{\par
+            \par
+            \cf1 double\cf2  obwod = 2 * Dlugosc + 2 * Szerokosc;\par
+            \cf1 return\cf2  obwod;\par
+        \}\par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+            \{\par
+        Console.Write(\cf4 "Powierzchnia prost\f3\'b9\f2 k\f3\'b9\f2 ta to: \{0\}cm2 a obw\lang1033\f4\'f3\lang1045\f2 d to: \{1\}cm"\cf2 , Powierzchnia(), Obwod());\par
+\par
+            \}\par
+        \}\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Prostokat p1 = \cf1 new\cf2  Prostokat(5, 8);\par
+            p1.Prezentuj();\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+    \par
+\}\par
+\par
+\par
+\b\f3 Zadanie 6,2\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Prostokat\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  Dlugosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  Szerokosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  Prostokat(\cf1 int\cf2  bok1, \cf1 int\cf2  bok2)\par
+        \{\par
+            Dlugosc = bok1;\par
+            Szerokosc = bok2;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Powierzchnia()\par
+        \{\par
+            \cf1 double\cf2  powierzchnia = Dlugosc * Szerokosc;\par
+            \cf1 return\cf2  powierzchnia;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Obwod()\par
+        \{\par
+            \par
+            \cf1 double\cf2  obwod = 2 * Dlugosc + 2 * Szerokosc;\par
+            \cf1 return\cf2  obwod;\par
+        \}\par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+            \{\par
+        Console.WriteLine(\cf4 "Powierzchnia prost\f3\'b9\f2 k\f3\'b9\f2 ta to: \{0\}cm2 a obw\lang1033\f4\'f3\lang1045\f2 d to: \{1\}cm"\cf2 , Powierzchnia(), Obwod());\par
+\par
+            \}\par
+        \}\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Prostokat[] tab = \cf1 new\cf2  Prostokat[3];\par
+            tab[0] = \cf1 new\cf2  Prostokat(2, 5);\par
+            tab[1] = \cf1 new\cf2  Prostokat(4, 8);\par
+            tab[2] = \cf1 new\cf2  Prostokat(10, 22);\par
+            \cf1 foreach\cf2  (Prostokat p \cf1 in\cf2  tab)\par
+            \{\par
+               p.Prezentuj();\par
+            \}\par
+            \par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+    \par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 6,3\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Prostokat\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  Dlugosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  Szerokosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 double\cf2  maxPole;       \cf5 //pole statyczne\cf2\par
+        \cf1 public\cf2  Prostokat(\cf1 int\cf2  bok1, \cf1 int\cf2  bok2)\par
+        \{\par
+            Dlugosc = bok1;\par
+            Szerokosc = bok2;\par
+\par
+            \cf1 if\cf2  (Powierzchnia() > maxPole)\par
+            \{\par
+                maxPole = Powierzchnia();\par
+            \}\par
+        \}\par
+        \cf1 static\cf2  Prostokat() \cf5 //konstruktor statyczny\cf2\par
+        \{\par
+            maxPole = 0;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Powierzchnia()\par
+        \{\par
+            \cf1 double\cf2  powierzchnia = Dlugosc * Szerokosc;\par
+            \cf1 return\cf2  powierzchnia;\par
+        \}\par
+        \cf1 private\cf2  \cf1 double\cf2  Obwod()\par
+        \{\par
+\par
+            \cf1 double\cf2  obwod = 2 * Dlugosc + 2 * Szerokosc;\par
+            \cf1 return\cf2  obwod;\par
+        \}\par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+        \{\par
+            Console.WriteLine(\cf4 "Powierzchnia prost\f3\'b9\f2 k\f3\'b9\f2 ta to: \{0\}cm2 a obw\lang1033\f4\'f3\lang1045\f2 d to: \{1\}cm"\cf2 , Powierzchnia(), Obwod());\par
+\par
+        \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  PokazMaxPole()\par
+        \{\par
+            Console.WriteLine(\cf4 "Najwi\f3\'ea\f2 ksze pole to: \{0\}cm2"\cf2 , maxPole);\par
+\par
+        \}\par
+    \}\par
+        \par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Prostokat[] tab = \cf1 new\cf2  Prostokat[3];\par
+            tab[0] = \cf1 new\cf2  Prostokat(2, 5);\par
+            tab[1] = \cf1 new\cf2  Prostokat(4, 8);\par
+            tab[2] = \cf1 new\cf2  Prostokat(10, 22);\par
+            \cf1 foreach\cf2  (Prostokat p \cf1 in\cf2  tab)\par
+            \{\par
+               p.Prezentuj();\par
+            \}\par
+            Prostokat.PokazMaxPole();\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+    \par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 6,4\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Energia\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 double\cf2  Odczyt \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 double\cf2  zuzyciepoczatkowe;\par
+        \par
+        \cf1 public\cf2  Energia(\cf1 double\cf2  a)\par
+        \{\par
+            Odczyt = a;\par
+           \par
+        \}\par
+        \par
+        \cf1 public\cf2  \cf1 double\cf2  Zuzycie()\par
+        \{\par
+            \cf1 double\cf2  zuzycie = Odczyt - zuzyciepoczatkowe;\par
+            \cf1 return\cf2  zuzycie;\par
+        \}\par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+        \{\par
+            Console.WriteLine(\cf4 "Pocz\f3\'b9\f2 tkowy stan licznika to: \{0\} a obecny to: \{1\}"\cf2 , zuzyciepoczatkowe, Odczyt);\par
+\par
+        \}\par
+      \par
+    \}\par
+        \par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  zu\f3\'bf\f2 ycie pocz\f3\'b9\f2 tkowe"\cf2 );\par
+            Energia.zuzyciepoczatkowe = Convert.ToDouble(Console.ReadLine());\par
+\par
+            Energia e1 = \cf1 new\cf2  Energia(1250.0);\par
+\par
+            e1.Prezentuj();\par
+\par
+            Console.WriteLine(\cf4 "Zu\f3\'bf\f2 ycie energii to: \{0\}"\cf2 , e1.Zuzycie());\par
+            Console.ReadKey();\par
+        \}\par
+    \}\par
+    \par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 6,5\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Punkt\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaA \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaB \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+\par
+        \cf1 public\cf2  Punkt(\cf1 int\cf2  wspolrzednaA, \cf1 int\cf2  wspolrzednaB)\par
+        \{\par
+            WspolrzednaA = wspolrzednaA;\par
+            WspolrzednaB = wspolrzednaB;\par
+        \}\par
+\par
+        \cf1 public\cf2  \cf1 void\cf2  Przesun(\cf1 int\cf2  x, \cf1 int\cf2  y)\par
+        \{\par
+            WspolrzednaA += x;\par
+            WspolrzednaB += y;\par
+        \}\par
+        \cf1 public\cf2  \cf1 void\cf2  Wyswietl()\par
+        \{\par
+            Console.WriteLine(\cf4 "Punk p przesuni\f3\'ea\f2 ciu ma wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dne \{0\} i \{1\}"\cf2 , WspolrzednaA, WspolrzednaB);\par
+        \}\par
+    \}\par
+\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Punkt punkt_1 = \cf1 new\cf2  Punkt(1, 1);\par
+            \cf1 int\cf2  a = 0;\par
+            \cf1 int\cf2  b = 0;\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  pierwsz\f3\'b9\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dn\f3\'b9\f2  przesuni\f3\'ea\f2 cia"\cf2 );\par
+            a = Convert.ToInt16(Console.ReadLine());\par
+            Console.WriteLine(\cf4 "Prosz\f3\'ea\f2  poda\f3\'e6\f2  pierwsz\f3\'b9\f2  wsp\lang1033\f4\'f3\lang1045\f3\'b3\f2 rz\f3\'ea\f2 dn\f3\'b9\f2  przesuni\f3\'ea\f2 cia"\cf2 );\par
+            b = Convert.ToInt16(Console.ReadLine());\par
+            punkt_1.Przesun(a, b);\par
+            Console.WriteLine(\cf4 "Wspolrzedne punktu po przesunieciu to: \{0\} i \{1\}"\cf2 , punkt_1.WspolrzednaA, punkt_1.WspolrzednaB);\par
+\par
+\par
+            Console.ReadKey();\par
+        \}\par
+\par
+    \par
+    \}\par
+\}\par
+\par
+\cf0\b\f3\par
+\par
+\par
+Zadanie 6,6\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Punkt\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaA \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaB \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+\par
+        \cf1 public\cf2  Punkt(\cf1 int\cf2  wspolrzednaA, \cf1 int\cf2  wspolrzednaB)\par
+        \{\par
+            WspolrzednaA = wspolrzednaA;\par
+            WspolrzednaB = wspolrzednaB;\par
+        \}\par
+\par
+        \cf1 public\cf2  \cf1 void\cf2  Przesun(\cf1 int\cf2  x, \cf1 int\cf2  y)\par
+        \{\par
+            WspolrzednaA += x;\par
+            WspolrzednaB += y;\par
+        \}\par
+       \par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+        \{\par
+            Console.WriteLine(\cf4 "Wspolrzedne punktow to: \{0\} i \{1\}"\cf2 , WspolrzednaA, WspolrzednaB);\par
+\par
+        \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  NaProstej(Punkt[] punkt)\par
+        \{\par
+            \cf1 double\cf2  det = 0;\par
+            det = punkt[0].WspolrzednaA * punkt[1].WspolrzednaB + punkt[1].WspolrzednaA * punkt[2].WspolrzednaB + punkt[2].WspolrzednaA * punkt[0].WspolrzednaB - punkt[2].WspolrzednaA * punkt[1].WspolrzednaB - punkt[0].WspolrzednaA * punkt[2].WspolrzednaB - punkt[1].WspolrzednaA * punkt[0].WspolrzednaB;\par
+            \cf1 if\cf2  (det == 0)\par
+            \{\par
+                Console.WriteLine(\cf4 "Punty le\f3\'bf\'b9\f2  na tej samej prostej"\cf2 );\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+            Console.WriteLine(\cf4 "Punkty nie le\f3\'bf\'b9\f2  na tej samej prostej"\cf2 );\par
+            \}\par
+        \}\par
+    \}\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Punkt[] punkt = \cf1 new\cf2  Punkt[3];\par
+            punkt[0] = \cf1 new\cf2  Punkt(5, 5);\par
+            punkt[1] = \cf1 new\cf2  Punkt(8, 8);\par
+            punkt[2] = \cf1 new\cf2  Punkt(22, 22);\par
+            \cf1 foreach\cf2  (Punkt i \cf1 in\cf2  punkt)\par
+            \{\par
+                i.Prezentuj();\par
+            \}\par
+            Punkt.NaProstej(punkt);\par
+            \par
+\par
+\par
+            Console.ReadKey();\par
+        \}\par
+\par
+    \par
+    \}\par
+\}\par
+\par
+\par
+\par
+\b\f3 Zadanie 6,7\b0\f2\par
+\par
+\cf0\b\par
+\cf1\b0 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Odcinek\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaAX \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaAY \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaBX \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  WspolrzednaBY \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+\par
+        \cf1 public\cf2  Odcinek(\cf1 int\cf2  wspolrzednaAX, \cf1 int\cf2  wspolrzednaAY, \cf1 int\cf2  wspolrzednaBX, \cf1 int\cf2  wspolrzednaBY)\par
+        \{\par
+            WspolrzednaAX = wspolrzednaAX;\par
+            WspolrzednaAY = wspolrzednaAY;\par
+            WspolrzednaBX = wspolrzednaBX;\par
+            WspolrzednaBY = wspolrzednaBY;\par
+        \}\par
+\par
+        \par
+        \cf1 public\cf2  \cf1 void\cf2  WyswietlDlugosc()\par
+        \{\par
+            \cf1 double\cf2  dlugosc = Math.Sqrt(Math.Pow((WspolrzednaBX - WspolrzednaAX), 2) + Math.Pow((WspolrzednaBY - WspolrzednaAY), 2));\par
+            Console.WriteLine(\cf4 "D\f3\'b3\f2 ugo\f3\'9c\'e6\f2  odcinka to \{0\}"\cf2 , dlugosc);\par
+        \}\par
+    \}\par
+\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Odcinek odcinek_1 = \cf1 new\cf2  Odcinek(1, 1, 6, 12);\par
+\par
+            odcinek_1.WyswietlDlugosc();\par
+\par
+            Console.ReadKey();\par
+        \}\par
+\par
+    \par
+    \}\par
+\}\par
+\par
+\par
+\cf0\b\par
+\f3 Zadanie 6,8\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 class\cf2  \cf3 Prostopadloscian\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 int\cf2  Dlugosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  Szerokosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  Wysokosc \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+\par
+        \cf1 public\cf2  Prostopadloscian(\cf1 int\cf2  dlugosc, \cf1 int\cf2  szerokosc, \cf1 int\cf2  wysokosc)\par
+        \{\par
+            Dlugosc = dlugosc;\par
+            Szerokosc = szerokosc;\par
+            Wysokosc = wysokosc;\par
+        \}\par
+\par
+        \cf1 public\cf2  \cf1 double\cf2  Objetosc(Prostopadloscian[] prost)\par
+        \{\par
+            \cf1 return\cf2  (Dlugosc * Szerokosc * Wysokosc);\par
+        \}\par
+\par
+        \cf1 public\cf2  \cf1 void\cf2  Prezentuj()\par
+        \{\par
+            Console.WriteLine(\cf4 "Wymiary prostobad\f3\'b3\f2 o\f3\'9c\f2 cian\lang1033\f4\'f3\lang1045\f2 w to: \{0\} , \{1\} , \{2\}"\cf2 , Dlugosc, Szerokosc, Wysokosc);\par
+\par
+        \}\par
+        \cf1 public\cf2  \cf1 static\cf2  \cf1 void\cf2  PorownajObjetosc(\cf1 double\cf2  objetosc_prost0, \cf1 double\cf2  objetosc_prost1)\par
+        \{\par
+            \par
+\par
+            \cf1 if\cf2  (objetosc_prost0 == objetosc_prost1)\par
+            \{\par
+                Console.WriteLine(\cf4 "prostopad\f3\'b3\f2 o\f3\'9c\f2 cian 1 jestr\lang1033\f4\'f3\lang1045\f2 wny prostopad\f3\'b3\f2 o\f3\'9c\f2 cianowi 2"\cf2 );\par
+            \}\par
+            \cf1 else\cf2  \cf1 if\cf2  (objetosc_prost0 > objetosc_prost1)\par
+            \{\par
+                Console.WriteLine(\cf4 "prostopad\f3\'b3\f2 o\f3\'9c\f2 cian 1 jest wiekszy od prostopad\f3\'b3\f2 o\f3\'9c\f2 cianu 2"\cf2 );\par
+            \}\par
+            \cf1 else\cf2\par
+            \{\par
+                Console.WriteLine(\cf4 "prostopad\f3\'b3\f2 o\f3\'9c\f2 cian 1 jest mniejszy od prostopad\f3\'b3\f2 o\f3\'9c\f2 cianu 2"\cf2 );\par
+            \}\par
+        \}\par
+    \}\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Prostopadloscian[] prost = \cf1 new\cf2  Prostopadloscian[2];\par
+            prost[0] = \cf1 new\cf2  Prostopadloscian(7, 5, 9);\par
+            prost[1] = \cf1 new\cf2  Prostopadloscian(6, 5, 9);\par
+            \par
+            \cf1 foreach\cf2  (Prostopadloscian i \cf1 in\cf2  prost)\par
+            \{\par
+                i.Prezentuj();\par
+            \}\par
+            Console.WriteLine(prost[0].Objetosc(prost));\par
+            Console.WriteLine(prost[1].Objetosc(prost));\par
+            \cf1 double\cf2  a = prost[0].Objetosc(prost);\par
+            \cf1 double\cf2  b = prost[1].Objetosc(prost);\par
+            Prostopadloscian.PorownajObjetosc(a, b);\par
+\par
+\par
+\par
+            Console.ReadKey();\par
+        \}\par
+\par
+\par
+    \}\par
+\}\par
+\par
+\par
+\par
+\cf0\b\f3 Zadanie 6.10\par
+\par
+\par
+\par
+\cf1\b0\f2 namespace\cf2  Zadania_z_ksiazki\par
+\{\par
+    \cf1 struct\cf2  \cf3 Kandydat\cf2\par
+    \{\par
+        \cf1 public\cf2  \cf1 string\cf2  Nazwisko \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  PunktyMatematyka \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  PunktyInformatyka \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+        \cf1 public\cf2  \cf1 int\cf2  PunktyJezykObcy \{ \cf1 get\cf2 ; \cf1 set\cf2 ; \}\par
+\par
+        \cf1 public\cf2  Kandydat(\cf1 string\cf2  nazwisko, \cf1 int\cf2  punktyMatematyka, \cf1 int\cf2  punktyInformatyka, \cf1 int\cf2  punktyJezykObcy)\par
+        \{\par
+            Nazwisko = nazwisko;\par
+            PunktyMatematyka = punktyMatematyka;\par
+            PunktyInformatyka = punktyInformatyka;\par
+            PunktyJezykObcy = punktyJezykObcy;\par
+        \}\par
+\par
+        \cf1 public\cf2  \cf1 double\cf2  IloscPunktowLacznie(Kandydat[] kandydat)\par
+        \{\par
+            \cf1 return\cf2  (PunktyMatematyka * 0.6 + PunktyInformatyka * 0.5 + PunktyJezykObcy * 0.2);\par
+        \}\par
+        \par
+    \}\par
+    \cf1 class\cf2  \cf3 Program\cf2\par
+    \{\par
+        \cf1 static\cf2  \cf1 void\cf2  Main(\cf1 string\cf2 [] args)\par
+        \{\par
+            Kandydat[] kandydat = \cf1 new\cf2  Kandydat[3];\par
+            kandydat[0] = \cf1 new\cf2  Kandydat(\cf4 "Nowak"\cf2 , 77, 55, 50);\par
+            kandydat[1] = \cf1 new\cf2  Kandydat(\cf4 "Kowalski"\cf2 , 66, 15, 29);\par
+            kandydat[2] = \cf1 new\cf2  Kandydat(\cf4 "Wi\f3\'9c\f2 niewski"\cf2 , 22, 45, 85);\par
+            \cf1 foreach\cf2  (Kandydat i \cf1 in\cf2  kandydat)\par
+            \{\par
+                Console.WriteLine(\cf4 "Kandydat "\cf2  +  i.Nazwisko + \cf4 ", Ilo\f3\'9c\'e6\f2  punkt\lang1033\f4\'f3\lang1045\f2 w: "\cf2  + i.IloscPunktowLacznie(kandydat));\par
+            \}\par
+            \par
+            Console.ReadKey();\par
+        \}\par
+\par
+\par
+    \}\par
+\}\par
+\cf0\b\par
+\par
+\par
+\cf1\b0\par
+}
+ 
